@@ -415,7 +415,7 @@
  
  <div class="content" id="inicio">
    <h1>Identificador de Animales</h1>
-   <div class="authors">Por Rodrigo Mesis , Carlos Mendoza , Ariel Flores y tania alejandra  </div>
+   <div class="authors">Por Rodrigo Mesis , Carlos Mendoza , Ariel Flores y Tania Maldonado.  </div>
    
    <!-- Nuevo: Campo de búsqueda -->
    <div class="search-container">
