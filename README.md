@@ -148,7 +148,7 @@
    .info-title {
      font-weight: bold;
      margin-bottom: 5px;
-     color: #000000; /* Cambiado a negro */
+     color: #000000;
      font-size: 1rem;
    }
  
@@ -291,7 +291,6 @@
      margin-top: 4px;
    }
  
-   /* Nuevos estilos para la barra de progreso */
    .progress-container {
      width: 100%;
      background: rgba(255,255,255,0.1);
@@ -318,7 +317,6 @@
      color: rgba(255,255,255,0.8);
    }
 
-   /* Nuevos estilos para el buscador */
    .search-container {
      margin: 20px auto;
      max-width: 500px;
@@ -415,9 +413,8 @@
  
  <div class="content" id="inicio">
    <h1>Identificador de Animales</h1>
-   <div class="authors">Por Rodrigo Mesis , Carlos Mendoza , Ariel Flores y Tania Maldonado.  </div>
+   <div class="authors">Por Rodrigo Mesis , Carlos Mendoza , Ariel Flores y Tania Maldonado.</div>
    
-   <!-- Nuevo: Campo de búsqueda -->
    <div class="search-container">
      <input type="text" id="animalSearch" placeholder="Buscar animal por nombre...">
      <button id="searchButton" class="camera-btn">Buscar</button>
@@ -451,7 +448,7 @@
    <h2>Contacto</h2>
    <div class="info-card">
      <p>Si tienes preguntas o sugerencias, por favor contáctanos:</p>
-     <p>Email: rodrigomesis69@gmail.com</p>
+     <p>Email: huellaanimalidenticador@gmail.com</p>
    </div>
  </div>
  
@@ -482,28 +479,30 @@
    // Mapeo de nombres en inglés a español
    const animalNames = {
      "dog": "perro",
-"lacewing":"camarón",
-"worm": "Gusano",
-"tortuga paslama":"turtoga paslama",
-"earthworm": "lombriz",
-"ant": "hormiga",
-"caterpillar": "oruga",
-"jellyfish": "medusa",
-"crab": "cangrejo",
-"octopus": "pulpo",
-"snake": "serpiente",
-"scorpion": "escorpión",
-"grasshopper": "saltamontes",
-"flea": "pulga",
-"tick": "garrapata",
-"lobster": "langosta",
-"shrimp": "camarón",
-"slug": "babosa",
-"fiddler crab":"cangrejo",
- "jelly fish":"medusa",
-    "hermit crab":"pulpo",
- "thunder snake":"lombriz",
-   "golden retriever":"perro",
+  "water buffalo":"danto",
+     "lacewing":"camarón",
+     "worm": "Gusano",
+     "tortuga paslama":"turtoga paslama",
+     "earthworm": "lombriz",
+     "ant": "hormiga",
+     "caterpillar": "oruga",
+     "jellyfish": "medusa",
+     "crab": "cangrejo",
+     "octopus": "pulpo",
+     "snake": "serpiente",
+     "scorpion": "escorpión",
+     "grasshopper": "saltamontes",
+     "flea": "pulga",
+     "tick": "garrapata",
+     "lobster": "langosta",
+     "shrimp": "camarón",
+     "slug": "babosa",
+     "fiddler crab":"cangrejo",
+     "jelly fish":"medusa",
+     "hermit crab":"pulpo",
+     "thunder snake":"lombriz",
+     "golden retriever":"perro",
+    "hog":"cerdo",
      "sea lion":"foca",
      "tarantula": "Araña",
      "green lizard": "iguana verde",
@@ -529,7 +528,6 @@
      "boa constrictor": "culebra boa",
      "horse": "caballo",
      "fly": "mosca",
-     "water buffalo": "danto o tapir",
      "loggerhead": "paslama",
      "elephant": "elefante",
      "toucan": "Tucán",
@@ -573,283 +571,320 @@
          especie: "C. lupus familiaris"
        }
      },
-     // Agregar esto dentro del objeto animalDatabase (antes del cierre })
-"Gusano": {
-  nombre: "Gusano (Clase Oligochaeta)",
-  tipo: "terrestre",
-  info: "Los gusanos son animales invertebrados de cuerpo alargado y blando, sin extremidades. Desempeñan un papel crucial en la fertilización del suelo.",
-  alimentacion: "Detritívoro (materia orgánica en descomposición).",
-  clasificacion: "Anélido",
-  habitat: "Suelos húmedos, materia orgánica en descomposición.",
-  caracteristicas: "Cuerpo cilíndrico y segmentado, carece de esqueleto, respiración cutánea.",
-  curiosidades: "Algunas especies pueden regenerar partes de su cuerpo si son cortadas.",
-  esperanza_vida: "1-8 años según especie",
-  esqueleto: "Invertebrado",
-  taxonomia: {
-    reino: "Animalia", filo: "Annelida", clase: "Clitellata",
-    orden: "Haplotaxida", familia: "Lumbricidae", genero: "Eisenia",
-    especie: "E. fetida (ejemplo)"
-  }
+     "danto": {
+   nombre: "Danto (Tapirus)",
+   tipo: "terrestre",
+   info: "Mamífero herbívoro que habita en bosques y selvas de América Central, América del Sur y el sudeste asiático. Es un animal solitario y de hábitos nocturnos.",
+   alimentacion: "Herbívoro (hojas, brotes, frutas, plantas acuáticas y ramas tiernas).",
+   clasificacion: "Mamífero",
+   habitat: "Bosques tropicales y áreas cercanas a ríos en América y sureste asiático.",
+   caracteristicas: "Cuerpo robusto, trompa corta prensil, pelaje corto generalmente marrón oscuro o grisáceo.",
+   curiosidades: "Considerados 'jardineros del bosque' por dispersar semillas. Excelentes nadadores.",
+   esperanza_vida: "25-30 años en cautiverio",
+   esqueleto: "Vertebrado",
+   taxonomia: {
+     reino: "Animalia",
+     filo: "Chordata",
+     clase: "Mammalia",
+     orden: "Perissodactyla",
+     familia: "Tapiridae",
+     genero: "Tapirus",
+     especie: "Varía por región (ej. T. bairdii, T. terrestris)"
+   }
 },
-"lombriz": {
-  nombre: "Lombriz de tierra (Lumbricus terrestris)",
-  tipo: "terrestre",
-  info: "Anélido muy beneficioso para la agricultura por su capacidad de airear y fertilizar el suelo.",
-  alimentacion: "Detritívoro (hojas en descomposición y materia orgánica del suelo).",
-  clasificacion: "Anélido",
-  habitat: "Suelos húmedos y ricos en materia orgánica.",
-  caracteristicas: "Cuerpo segmentado con anillos, moco protector, fotosensible.",
-  curiosidades: "Puede consumir hasta el 90% de su peso corporal diariamente.",
-  esperanza_vida: "4-8 años",
-  esqueleto: "Invertebrado",
-  taxonomia: {
-    reino: "Animalia", filo: "Annelida", clase: "Clitellata",
-    orden: "Haplotaxida", familia: "Lumbricidae", genero: "Lumbricus",
-    especie: "L. terrestris"
-  }
+     "Gusano": {
+       nombre: "Gusano (Clase Oligochaeta)",
+       tipo: "terrestre",
+       info: "Los gusanos son animales invertebrados de cuerpo alargado y blando, sin extremidades. Desempeñan un papel crucial en la fertilización del suelo.",
+       alimentacion: "Detritívoro (materia orgánica en descomposición).",
+       clasificacion: "Anélido",
+       habitat: "Suelos húmedos, materia orgánica en descomposición.",
+       caracteristicas: "Cuerpo cilíndrico y segmentado, carece de esqueleto, respiración cutánea.",
+       curiosidades: "Algunas especies pueden regenerar partes de su cuerpo si son cortadas.",
+       esperanza_vida: "1-8 años según especie",
+       esqueleto: "Invertebrado",
+       taxonomia: {
+         reino: "Animalia", filo: "Annelida", clase: "Clitellata",
+         orden: "Haplotaxida", familia: "Lumbricidae", genero: "Eisenia",
+         especie: "E. fetida (ejemplo)"
+       }
+     },
+     "lombriz": {
+       nombre: "Lombriz de tierra (Lumbricus terrestris)",
+       tipo: "terrestre",
+       info: "Anélido muy beneficioso para la agricultura por su capacidad de airear y fertilizar el suelo.",
+       alimentacion: "Detritívoro (hojas en descomposición y materia orgánica del suelo).",
+       clasificacion: "Anélido",
+       habitat: "Suelos húmedos y ricos en materia orgánica.",
+       caracteristicas: "Cuerpo segmentado con anillos, moco protector, fotosensible.",
+       curiosidades: "Puede consumir hasta el 90% de su peso corporal diariamente.",
+       esperanza_vida: "4-8 años",
+       esqueleto: "Invertebrado",
+       taxonomia: {
+         reino: "Animalia", filo: "Annelida", clase: "Clitellata",
+         orden: "Haplotaxida", familia: "Lumbricidae", genero: "Lumbricus",
+         especie: "L. terrestris"
+       }
+     },
+     "hormiga": {
+       nombre: "Hormiga (Familia Formicidae)",
+       tipo: "terrestre",
+       info: "Insectos sociales que viven en colonias organizadas con división de trabajo.",
+       alimentacion: "Omnívoro (insectos, néctar, semillas, hongos).",
+       clasificacion: "Insecto",
+       habitat: "Prácticamente todos los ecosistemas terrestres.",
+       caracteristicas: "Cuerpo dividido en cabeza, tórax y abdomen. Antenas articuladas.",
+       curiosidades: "Algunas colonias pueden tener millones de individuos. Cultivan hongos para alimentarse.",
+       esperanza_vida: "Semanas a años (reinas hasta 30 años)",
+       esqueleto: "Invertebrado",
+       taxonomia: {
+         reino: "Animalia", filo: "Arthropoda", clase: "Insecta",
+         orden: "Hymenoptera", familia: "Formicidae", genero: "Varía",
+         especie: "Varía"
+       }
+     },
+     "oruga": {
+       nombre: "Oruga (Larva de Lepidoptera)",
+       tipo: "terrestre",
+       info: "Etapa larval de mariposas y polillas, caracterizada por su alto consumo de vegetación.",
+       alimentacion: "Herbívoro (hojas, tallos, frutos).",
+       clasificacion: "Insecto",
+       habitat: "Plantas hospederas específicas.",
+       caracteristicas: "Cuerpo segmentado con múltiples patas falsas, mandíbulas fuertes.",
+       curiosidades: "Algunas producen seda para formar capullos. Muchas tienen defensas químicas.",
+       esperanza_vida: "2 semanas a varios meses (según especie)",
+       esqueleto: "Invertebrado",
+       taxonomia: {
+         reino: "Animalia", filo: "Arthropoda", clase: "Insecta",
+         orden: "Lepidoptera", familia: "Varía", genero: "Varía",
+         especie: "Varía"
+       }
+     },
+     "medusa": {
+       nombre: "Medusa (Clase Scyphozoa)",
+       tipo: "acuático",
+       info: "Organismos marinos gelatinosos con tentáculos urticantes, parte del plancton.",
+       alimentacion: "Carnívoro (pequeños peces, zooplancton).",
+       clasificacion: "Cnidario",
+       habitat: "Océanos, desde superficie hasta profundidad.",
+       caracteristicas: "Cuerpo gelatinoso en forma de campana con tentáculos.",
+       curiosidades: "Algunas especies son bioluminiscentes. Las más venenosas pueden ser mortales.",
+       esperanza_vida: "Horas a varios años (según especie)",
+       esqueleto: "Invertebrado",
+       taxonomia: {
+         reino: "Animalia", filo: "Cnidaria", clase: "Scyphozoa",
+         orden: "Semaeostomeae", familia: "Ulmaridae", genero: "Aurelia",
+         especie: "A. aurita (ejemplo)"
+       }
+     },
+     "cangrejo": {
+       nombre: "Cangrejo (Infraorden Brachyura)",
+       tipo: "acuático",
+       info: "Crustáceos con caparazón duro y pinzas, adaptados a diversos ambientes acuáticos.",
+       alimentacion: "Omnívoro (algas, moluscos, detritos, peces pequeños).",
+       clasificacion: "Crustáceo",
+       habitat: "Océanos, ríos, manglares y tierra húmeda.",
+       caracteristicas: "Diez patas (dos convertidas en pinzas), caparazón ancho.",
+       curiosidades: "Caminan de lado. Algunas especies pueden regenerar extremidades.",
+       esperanza_vida: "3-12 años",
+       esqueleto: "Invertebrado",
+       taxonomia: {
+         reino: "Animalia", filo: "Arthropoda", clase: "Malacostraca",
+         orden: "Decapoda", familia: "Varía", genero: "Varía",
+         especie: "Varía"
+       }
+     },
+     "pulpo": {
+       nombre: "Pulpo (Orden Octopoda)",
+       tipo: "acuático",
+       info: "Moluscos cefalópodos muy inteligentes con ocho brazos y gran capacidad de camuflaje.",
+       alimentacion: "Carnívoro (cangrejos, moluscos, peces pequeños).",
+       clasificacion: "Molusco",
+       habitat: "Fondos marinos y arrecifes de coral.",
+       caracteristicas: "Tres corazones, cerebro complejo, capacidad de cambiar color/textura.",
+       curiosidades: "Pueden resolver puzzles y usar herramientas. Escapan de acuarios.",
+       esperanza_vida: "1-5 años (la mayoría muere después de reproducirse).",
+       esqueleto: "Invertebrado",
+       taxonomia: {
+         reino: "Animalia", filo: "Mollusca", clase: "Cephalopoda",
+         orden: "Octopoda", familia: "Octopodidae", genero: "Octopus",
+         especie: "O. vulgaris (ejemplo)"
+       }
+     },
+     "serpiente": {
+       nombre: "Serpiente (Suborden Serpentes)",
+       tipo: "terrestre",
+       info: "Reptiles sin patas con cuerpo alargado, algunas especies son venenosas.",
+       alimentacion: "Carnívoro (roedores, aves, huevos, otros reptiles).",
+       clasificacion: "Reptil",
+       habitat: "Diversos: desiertos, selvas, praderas, agua.",
+       caracteristicas: "Cuerpo alargado sin extremidades, lengua bífida, muda de piel.",
+       curiosidades: "Algunas pueden volar planeando. Las pitones matan por constricción.",
+       esperanza_vida: "10-25 años según especie",
+       esqueleto: "Vertebrado",
+       taxonomia: {
+         reino: "Animalia", filo: "Chordata", clase: "Reptilia",
+         orden: "Squamata", familia: "Varía", genero: "Varía",
+         especie: "Varía"
+       }
+     },
+     "escorpión": {
+       nombre: "Escorpión (Orden Scorpiones)",
+       tipo: "terrestre",
+       info: "Artrópodos con pinzas y cola venenosa, principalmente nocturnos.",
+       alimentacion: "Carnívoro (insectos, arañas, pequeños vertebrados).",
+       clasificacion: "Arácnido",
+       habitat: "Desiertos, bosques tropicales, zonas rocosas.",
+       caracteristicas: "Ocho patas, pinzas delanteras, aguijón venenoso en cola.",
+       curiosidades: "Fluorescen bajo luz UV. Sólo 25 de 1500 especies son peligrosas para humanos.",
+       esperanza_vida: "2-10 años",
+       esqueleto: "Invertebrado",
+       taxonomia: {
+         reino: "Animalia", filo: "Arthropoda", clase: "Arachnida",
+         orden: "Scorpiones", familia: "Varía", genero: "Varía",
+         especie: "Varía"
+       }
+     },
+     "saltamontes": {
+       nombre: "Saltamontes (Suborden Caelifera)",
+       tipo: "terrestre",
+       info: "Insectos herbívoros con potentes patas traseras para saltar.",
+       alimentacion: "Herbívoro (hojas, pasto, cultivos).",
+       clasificacion: "Insecto",
+       habitat: "Praderas, campos agrícolas, zonas herbáceas.",
+       caracteristicas: "Patas traseras largas para saltar, antenas cortas, alas en adultos.",
+       curiosidades: "Algunas especies forman plagas devastadoras (langostas). Producen sonido frotando patas.",
+       esperanza_vida: "1-2 años",
+       esqueleto: "Invertebrado",
+       taxonomia: {
+         reino: "Animalia", filo: "Arthropoda", clase: "Insecta",
+         orden: "Orthoptera", familia: "Acrididae", genero: "Schistocerca",
+         especie: "S. americana (ejemplo)"
+       }
+     },
+     "Cerdo": {
+   "nombre": "Cerdo (Sus scrofa domesticus)",
+   "tipo": "mamífero terrestre",
+   "info": "Animal doméstico omnívoro, criado por su carne (porcino) y piel.",
+   "alimentacion": "Omnívora (vegetales, frutas, insectos, pequeños animales).",
+   "clasificacion": "Mamífero artiodáctilo",
+   "habitat": "Granjas, bosques (en estado salvaje).",
+   "caracteristicas": "Cuerpo robusto, hocico flexible, piel con cerdas, excelente olfato.",
+   "curiosidades": "Son inteligentes (más que los perros), no sudan y pueden nadar.",
+   "esperanza_vida": "10-15 años (en cautiverio).",
+   "esqueleto": "Vertebrado",
+   "taxonomia": {
+     "reino": "Animalia",
+     "filo": "Chordata",
+     "clase": "Mammalia",
+     "orden": "Artiodactyla",
+     "familia": "Suidae",
+     "genero": "Sus",
+     "especie": "S. scrofa domesticus"
+   }
 },
-"hormiga": {
-  nombre: "Hormiga (Familia Formicidae)",
-  tipo: "terrestre",
-  info: "Insectos sociales que viven en colonias organizadas con división de trabajo.",
-  alimentacion: "Omnívoro (insectos, néctar, semillas, hongos).",
-  clasificacion: "Insecto",
-  habitat: "Prácticamente todos los ecosistemas terrestres.",
-  caracteristicas: "Cuerpo dividido en cabeza, tórax y abdomen. Antenas articuladas.",
-  curiosidades: "Algunas colonias pueden tener millones de individuos. Cultivan hongos para alimentarse.",
-  esperanza_vida: "Semanas a años (reinas hasta 30 años)",
-  esqueleto: "Invertebrado",
-  taxonomia: {
-    reino: "Animalia", filo: "Arthropoda", clase: "Insecta",
-    orden: "Hymenoptera", familia: "Formicidae", genero: "Varía",
-    especie: "Varía"
-  }
-},
-"oruga": {
-  nombre: "Oruga (Larva de Lepidoptera)",
-  tipo: "terrestre",
-  info: "Etapa larval de mariposas y polillas, caracterizada por su alto consumo de vegetación.",
-  alimentacion: "Herbívoro (hojas, tallos, frutos).",
-  clasificacion: "Insecto",
-  habitat: "Plantas hospederas específicas.",
-  caracteristicas: "Cuerpo segmentado con múltiples patas falsas, mandíbulas fuertes.",
-  curiosidades: "Algunas producen seda para formar capullos. Muchas tienen defensas químicas.",
-  esperanza_vida: "2 semanas a varios meses (según especie)",
-  esqueleto: "Invertebrado",
-  taxonomia: {
-    reino: "Animalia", filo: "Arthropoda", clase: "Insecta",
-    orden: "Lepidoptera", familia: "Varía", genero: "Varía",
-    especie: "Varía"
-  }
-},
-"medusa": {
-  nombre: "Medusa (Clase Scyphozoa)",
-  tipo: "acuático",
-  info: "Organismos marinos gelatinosos con tentáculos urticantes, parte del plancton.",
-  alimentacion: "Carnívoro (pequeños peces, zooplancton).",
-  clasificacion: "Cnidario",
-  habitat: "Océanos, desde superficie hasta profundidad.",
-  caracteristicas: "Cuerpo gelatinoso en forma de campana con tentáculos.",
-  curiosidades: "Algunas especies son bioluminiscentes. Las más venenosas pueden ser mortales.",
-  esperanza_vida: "Horas a varios años (según especie)",
-  esqueleto: "Invertebrado",
-  taxonomia: {
-    reino: "Animalia", filo: "Cnidaria", clase: "Scyphozoa",
-    orden: "Semaeostomeae", familia: "Ulmaridae", genero: "Aurelia",
-    especie: "A. aurita (ejemplo)"
-  }
-},
-"cangrejo": {
-  nombre: "Cangrejo (Infraorden Brachyura)",
-  tipo: "acuático",
-  info: "Crustáceos con caparazón duro y pinzas, adaptados a diversos ambientes acuáticos.",
-  alimentacion: "Omnívoro (algas, moluscos, detritos, peces pequeños).",
-  clasificacion: "Crustáceo",
-  habitat: "Océanos, ríos, manglares y tierra húmeda.",
-  caracteristicas: "Diez patas (dos convertidas en pinzas), caparazón ancho.",
-  curiosidades: "Caminan de lado. Algunas especies pueden regenerar extremidades.",
-  esperanza_vida: "3-12 años",
-  esqueleto: "Invertebrado",
-  taxonomia: {
-    reino: "Animalia", filo: "Arthropoda", clase: "Malacostraca",
-    orden: "Decapoda", familia: "Varía", genero: "Varía",
-    especie: "Varía"
-  }
-},
-"pulpo": {
-  nombre: "Pulpo (Orden Octopoda)",
-  tipo: "acuático",
-  info: "Moluscos cefalópodos muy inteligentes con ocho brazos y gran capacidad de camuflaje.",
-  alimentacion: "Carnívoro (cangrejos, moluscos, peces pequeños).",
-  clasificacion: "Molusco",
-  habitat: "Fondos marinos y arrecifes de coral.",
-  caracteristicas: "Tres corazones, cerebro complejo, capacidad de cambiar color/textura.",
-  curiosidades: "Pueden resolver puzzles y usar herramientas. Escapan de acuarios.",
-  esperanza_vida: "1-5 años (la mayoría muere después de reproducirse).",
-  esqueleto: "Invertebrado",
-  taxonomia: {
-    reino: "Animalia", filo: "Mollusca", clase: "Cephalopoda",
-    orden: "Octopoda", familia: "Octopodidae", genero: "Octopus",
-    especie: "O. vulgaris (ejemplo)"
-  }
-},
-"serpiente": {
-  nombre: "Serpiente (Suborden Serpentes)",
-  tipo: "terrestre",
-  info: "Reptiles sin patas con cuerpo alargado, algunas especies son venenosas.",
-  alimentacion: "Carnívoro (roedores, aves, huevos, otros reptiles).",
-  clasificacion: "Reptil",
-  habitat: "Diversos: desiertos, selvas, praderas, agua.",
-  caracteristicas: "Cuerpo alargado sin extremidades, lengua bífida, muda de piel.",
-  curiosidades: "Algunas pueden volar planeando. Las pitones matan por constricción.",
-  esperanza_vida: "10-25 años según especie",
-  esqueleto: "Vertebrado",
-  taxonomia: {
-    reino: "Animalia", filo: "Chordata", clase: "Reptilia",
-    orden: "Squamata", familia: "Varía", genero: "Varía",
-    especie: "Varía"
-  }
-},
-"escorpión": {
-  nombre: "Escorpión (Orden Scorpiones)",
-  tipo: "terrestre",
-  info: "Artrópodos con pinzas y cola venenosa, principalmente nocturnos.",
-  alimentacion: "Carnívoro (insectos, arañas, pequeños vertebrados).",
-  clasificacion: "Arácnido",
-  habitat: "Desiertos, bosques tropicales, zonas rocosas.",
-  caracteristicas: "Ocho patas, pinzas delanteras, aguijón venenoso en cola.",
-  curiosidades: "Fluorescen bajo luz UV. Sólo 25 de 1500 especies son peligrosas para humanos.",
-  esperanza_vida: "2-10 años",
-  esqueleto: "Invertebrado",
-  taxonomia: {
-    reino: "Animalia", filo: "Arthropoda", clase: "Arachnida",
-    orden: "Scorpiones", familia: "Varía", genero: "Varía",
-    especie: "Varía"
-  }
-},
-"saltamontes": {
-  nombre: "Saltamontes (Suborden Caelifera)",
-  tipo: "terrestre",
-  info: "Insectos herbívoros con potentes patas traseras para saltar.",
-  alimentacion: "Herbívoro (hojas, pasto, cultivos).",
-  clasificacion: "Insecto",
-  habitat: "Praderas, campos agrícolas, zonas herbáceas.",
-  caracteristicas: "Patas traseras largas para saltar, antenas cortas, alas en adultos.",
-  curiosidades: "Algunas especies forman plagas devastadoras (langostas). Producen sonido frotando patas.",
-  esperanza_vida: "1-2 años",
-  esqueleto: "Invertebrado",
-  taxonomia: {
-    reino: "Animalia", filo: "Arthropoda", clase: "Insecta",
-    orden: "Orthoptera", familia: "Acrididae", genero: "Schistocerca",
-    especie: "S. americana (ejemplo)"
-  }
-},
-"pulga": {
-  nombre: "Pulga (Orden Siphonaptera)",
-  tipo: "terrestre",
-  info: "Pequeños insectos parásitos sin alas que se alimentan de sangre.",
-  alimentacion: "Hematófago (sangre de mamíferos y aves).",
-  clasificacion: "Insecto",
-  habitat: "Pelaje/plumas de hospederos, alfombras, camas.",
-  caracteristicas: "Cuerpo comprimido lateralmente, patas traseras adaptadas para saltar.",
-  curiosidades: "Pueden saltar hasta 200 veces su longitud. Transmiten enfermedades como peste bubónica.",
-  esperanza_vida: "2-3 meses",
-  esqueleto: "Invertebrado",
-  taxonomia: {
-    reino: "Animalia", filo: "Arthropoda", clase: "Insecta",
-    orden: "Siphonaptera", familia: "Pulicidae", genero: "Pulex",
-    especie: "P. irritans (pulga humana)"
-  }
-},
-"garrapata": {
-  nombre: "Garrapata (Orden Ixodida)",
-  tipo: "terrestre",
-  info: "Arácnidos parásitos que se alimentan de sangre y transmiten enfermedades.",
-  alimentacion: "Hematófago (sangre de mamíferos, aves, reptiles).",
-  clasificacion: "Arácnido",
-  habitat: "Hierba alta, arbustos, esperando hospederos.",
-  caracteristicas: "Cuerpo plano antes de alimentarse, se hincha con sangre.",
-  curiosidades: "Algunas pueden transmitir Lyme, babesiosis y otras enfermedades graves.",
-  esperanza_vida: "Meses a 3 años según especie",
-  esqueleto: "Invertebrado",
-  taxonomia: {
-    reino: "Animalia", filo: "Arthropoda", clase: "Arachnida",
-    orden: "Ixodida", familia: "Ixodidae", genero: "Ixodes",
-    especie: "I. scapularis (ejemplo)"
-  }
-},
-"langosta": {
-  nombre: "Langosta (Familia Nephropidae)",
-  tipo: "acuático",
-  info: "Crustáceos marinos grandes y valiosos comercialmente, con pinzas poderosas.",
-  alimentacion: "Omnívoro (moluscos, algas, detritos, peces pequeños).",
-  clasificacion: "Crustáceo",
-  habitat: "Fondos marinos rocosos o arenosos.",
-  caracteristicas: "Pinzas grandes (una trituradora y otra cortadora), antenas largas.",
-  curiosidades: "Pueden vivir hasta 100 años. Migran en filas por el fondo marino.",
-  esperanza_vida: "50-100 años",
-  esqueleto: "Invertebrado",
-  taxonomia: {
-    reino: "Animalia", filo: "Arthropoda", clase: "Malacostraca",
-    orden: "Decapoda", familia: "Nephropidae", genero: "Homarus",
-    especie: "H. americanus (langosta americana)"
-  }
-},
-"camarón": {
-  nombre: "Camarón (Infraorden Caridea)",
-  tipo: "acuático",
-  info: "Crustáceos decápodos de pequeño tamaño, importantes en cadenas alimenticias acuáticas.",
-  alimentacion: "Omnívoro (algas, detritos, pequeños invertebrados).",
-  clasificacion: "Crustáceo",
-  habitat: "Océanos, estuarios, algunos en agua dulce.",
-  caracteristicas: "Cuerpo alargado, antenas largas, abdomen desarrollado.",
-  curiosidades: "Algunas especies limpian parásitos de peces. Pueden hacer ruido chasqueando sus pinzas.",
-  esperanza_vida: "1-6 años",
-  esqueleto: "Invertebrado",
-  taxonomia: {
-    reino: "Animalia", filo: "Arthropoda", clase: "Malacostraca",
-    orden: "Decapoda", familia: "Palaemonidae", genero: "Macrobrachium",
-    especie: "M. rosenbergii (ejemplo)"
-  }
-},
-"babosa": {
-  nombre: "Babosa (Orden Pulmonata)",
-  tipo: "terrestre",
-  info: "Moluscos gasterópodos sin concha externa, parientes terrestres de los caracoles.",
-  alimentacion: "Herbívoro (hojas, hongos, frutas en descomposición).",
-  clasificacion: "Molusco",
-  habitat: "Ambientes húmedos: jardines, bosques, bajo piedras.",
-  caracteristicas: "Cuerpo blando y alargado, moco protector, tentáculos retráctiles.",
-  curiosidades: "Producen un moco que dificulta su captura por depredadores. Algunas son venenosas.",
-  esperanza_vida: "1-6 años",
-  esqueleto: "Invertebrado",
-  taxonomia: {
-    reino: "Animalia", filo: "Mollusca", clase: "Gastropoda",
-    orden: "Pulmonata", familia: "Limacidae", genero: "Limax",
-    especie: "L. maximus (babosa grande)"
-  }
-},
+     "pulga": {
+       nombre: "Pulga (Orden Siphonaptera)",
+       tipo: "terrestre",
+       info: "Pequeños insectos parásitos sin alas que se alimentan de sangre.",
+       alimentacion: "Hematófago (sangre de mamíferos y aves).",
+       clasificacion: "Insecto",
+       habitat: "Pelaje/plumas de hospederos, alfombras, camas.",
+       caracteristicas: "Cuerpo comprimido lateralmente, patas traseras adaptadas para saltar.",
+       curiosidades: "Pueden saltar hasta 200 veces su longitud. Transmiten enfermedades como peste bubónica.",
+       esperanza_vida: "2-3 meses",
+       esqueleto: "Invertebrado",
+       taxonomia: {
+         reino: "Animalia", filo: "Arthropoda", clase: "Insecta",
+         orden: "Siphonaptera", familia: "Pulicidae", genero: "Pulex",
+         especie: "P. irritans (pulga humana)"
+       }
+     },
+     "garrapata": {
+       nombre: "Garrapata (Orden Ixodida)",
+       tipo: "terrestre",
+       info: "Arácnidos parásitos que se alimentan de sangre y transmiten enfermedades.",
+       alimentacion: "Hematófago (sangre de mamíferos, aves, reptiles).",
+       clasificacion: "Arácnido",
+       habitat: "Hierba alta, arbustos, esperando hospederos.",
+       caracteristicas: "Cuerpo plano antes de alimentarse, se hincha con sangre.",
+       curiosidades: "Algunas pueden transmitir Lyme, babesiosis y otras enfermedades graves.",
+       esperanza_vida: "Meses a 3 años según especie",
+       esqueleto: "Invertebrado",
+       taxonomia: {
+         reino: "Animalia", filo: "Arthropoda", clase: "Arachnida",
+         orden: "Ixodida", familia: "Ixodidae", genero: "Ixodes",
+         especie: "I. scapularis (ejemplo)"
+       }
+     },
+     "langosta": {
+       nombre: "Langosta (Familia Nephropidae)",
+       tipo: "acuático",
+       info: "Crustáceos marinos grandes y valiosos comercialmente, con pinzas poderosas.",
+       alimentacion: "Omnívoro (moluscos, algas, detritos, peces pequeños).",
+       clasificacion: "Crustáceo",
+       habitat: "Fondos marinos rocosos o arenosos.",
+       caracteristicas: "Pinzas grandes (una trituradora y otra cortadora), antenas largas.",
+       curiosidades: "Pueden vivir hasta 100 años. Migran en filas por el fondo marino.",
+       esperanza_vida: "50-100 años",
+       esqueleto: "Invertebrado",
+       taxonomia: {
+         reino: "Animalia", filo: "Arthropoda", clase: "Malacostraca",
+         orden: "Decapoda", familia: "Nephropidae", genero: "Homarus",
+         especie: "H. americanus (langosta americana)"
+       }
+     },
+     "camarón": {
+       nombre: "Camarón (Infraorden Caridea)",
+       tipo: "acuático",
+       info: "Crustáceos decápodos de pequeño tamaño, importantes en cadenas alimenticias acuáticas.",
+       alimentacion: "Omnívoro (algas, detritos, pequeños invertebrados).",
+       clasificacion: "Crustáceo",
+       habitat: "Océanos, estuarios, algunos en agua dulce.",
+       caracteristicas: "Cuerpo alargado, antenas largas, abdomen desarrollado.",
+       curiosidades: "Algunas especies limpian parásitos de peces. Pueden hacer ruido chasqueando sus pinzas.",
+       esperanza_vida: "1-6 años",
+       esqueleto: "Invertebrado",
+       taxonomia: {
+         reino: "Animalia", filo: "Arthropoda", clase: "Malacostraca",
+         orden: "Decapoda", familia: "Palaemonidae", genero: "Macrobrachium",
+         especie: "M. rosenbergii (ejemplo)"
+       }
+     },
+     "babosa": {
+       nombre: "Babosa (Orden Pulmonata)",
+       tipo: "terrestre",
+       info: "Moluscos gasterópodos sin concha externa, parientes terrestres de los caracoles.",
+       alimentacion: "Herbívoro (hojas, hongos, frutas en descomposición).",
+       clasificacion: "Molusco",
+       habitat: "Ambientes húmedos: jardines, bosques, bajo piedras.",
+       caracteristicas: "Cuerpo blando y alargado, moco protector, tentáculos retráctiles.",
+       curiosidades: "Producen un moco que dificulta su captura por depredadores. Algunas son venenosas.",
+       esperanza_vida: "1-6 años",
+       esqueleto: "Invertebrado",
+       taxonomia: {
+         reino: "Animalia", filo: "Mollusca", clase: "Gastropoda",
+         orden: "Pulmonata", familia: "Limacidae", genero: "Limax",
+         especie: "L. maximus (babosa grande)"
+       }
+     },
      "foca": {
-    nombre: "Foca (Familia Phocidae)",
-    tipo: "acuático",
-    info: "Mamíferos marinos adaptados a la vida acuática. Existen 33 especies de focas verdaderas, principalmente en regiones polares.",
-    alimentacion: "Carnívoro (peces, calamares, crustáceos).",
-    clasificacion: "Mamífero",
-    habitat: "Océanos, especialmente en zonas frías del Ártico y Antártida.",
-    caracteristicas: "Cuerpo hidrodinámico, extremidades en forma de aletas, gruesa capa de grasa. Sin orejas externas.",
-    curiosidades: "Pueden contener la respiración hasta 2 horas. Las crías nacen con pelaje blanco llamado 'lanugo'.",
-    esperanza_vida: "20-30 años (dependiendo de la especie)",
-    esqueleto: "Vertebrado",
-    taxonomia: {
-        reino: "Animalia",
-        filo: "Chordata",
-        clase: "Mammalia",
-        orden: "Carnivora",
-        familia: "Phocidae",
-        genero: "Varía",
-        especie: "Varía"
-    }
-},
+       nombre: "Foca (Familia Phocidae)",
+       tipo: "acuático",
+       info: "Mamíferos marinos adaptados a la vida acuática. Existen 33 especies de focas verdaderas, principalmente en regiones polares.",
+       alimentacion: "Carnívoro (peces, calamares, crustáceos).",
+       clasificacion: "Mamífero",
+       habitat: "Océanos, especialmente en zonas frías del Ártico y Antártida.",
+       caracteristicas: "Cuerpo hidrodinámico, extremidades en forma de aletas, gruesa capa de grasa. Sin orejas externas.",
+       curiosidades: "Pueden contener la respiración hasta 2 horas. Las crías nacen con pelaje blanco llamado 'lanugo'.",
+       esperanza_vida: "20-30 años (dependiendo de la especie)",
+       esqueleto: "Vertebrado",
+       taxonomia: {
+         reino: "Animalia", filo: "Chordata", clase: "Mammalia",
+         orden: "Carnivora", familia: "Phocidae", genero: "Varía",
+         especie: "Varía"
+       }
+     },
      "iguana verde": {
        nombre: "Iguana Verde (Iguana iguana)",
        tipo: "terrestre",
@@ -950,23 +985,6 @@
          reino: "Animalia", filo: "Chordata", clase: "Depende",
          orden: "Varía", familia: "Varía", genero: "Varía",
          especie: "Varía"
-       }
-     },
-     "pulpo": {
-       nombre: "Pulpo (Orden Octopoda)",
-       tipo: "acuático",
-       info: "Molusco cefalópodo con 8 tentáculos y alta inteligencia.",
-       alimentacion: "Carnívoro (cangrejos, moluscos, peces pequeños).",
-       clasificacion: "Molusco",
-       habitat: "Fondos marinos y arrecifes de coral.",
-       caracteristicas: "Tres corazones, sangre azul (hemocianina), camuflaje instantáneo.",
-       curiosidades: "Pueden resolver puzzles y usar herramientas como cocos para protegerse.",
-       esperanza_vida: "1-5 años (la mayoría muere después de reproducirse).",
-       esqueleto: "Invertebrado",
-       taxonomia: {
-         reino: "Animalia", filo: "Mollusca", clase: "Cephalopoda",
-         orden: "Octopoda", familia: "Octopodidae", genero: "Octopus, Enteroctopus, etc.",
-         especie: "Ej: Octopus vulgaris"
        }
      },
      "guacamaya": {
@@ -1105,23 +1123,6 @@
          especie: "M. musculus"
        }
      },
-     "danto o tapir": {
-       nombre: "Danto (Tapir)",
-       tipo: "terrestre",
-       info: "El danto, también conocido como tapir, es un mamífero herbívoro que habita en bosques y selvas de América Central, América del Sur y el sudeste asiático. Es un animal solitario y de hábitos nocturnos.",
-       alimentacion: "Herbívoro (hojas, frutas, brotes y ramas).",
-       clasificacion: "Mamífero",
-       habitat: "Bosques tropicales, selvas y áreas cercanas a ríos.",
-       caracteristicas: "Tamaño grande. Cuerpo robusto con una trompa corta y flexible. Pelaje corto y oscuro.",
-       curiosidades: "Los tapires son excelentes nadadores y pueden sumergirse en el agua para escapar de depredadores.",
-       esperanza_vida: "25-30 años",
-       esqueleto: "Vertebrado",
-       taxonomia: {
-         reino: "Animalia", filo: "Chordata", clase: "Mammalia",
-         orden: "Perissodactyla", familia: "Tapiridae", genero: "Tapirus",
-         especie: "T. bairdii (Tapir centroamericano), T. terrestris (Tapir sudamericano)"
-       }
-     },
      "zorro cola pelada": {
        nombre: "Zorro Cola Pelada (Cerdocyon thous)",
        tipo: "terrestre",
@@ -1156,7 +1157,6 @@
          especie: "Q. mexicanus"
        }
      },
-    
      "gato": {
        nombre: "Gato (Felis catus)",
        tipo: "terrestre",
@@ -1601,6 +1601,57 @@
      }
    };
  
+   // Función para redimensionar imágenes manteniendo la relación de aspecto
+   function resizeImage(img, maxWidth = 1000, maxHeight = 1000) {
+     const canvas = document.createElement('canvas');
+     const ctx = canvas.getContext('2d');
+     
+     // Calcular nuevas dimensiones manteniendo la relación de aspecto
+     let width = img.width;
+     let height = img.height;
+     
+     if (width > maxWidth) {
+       const ratio = maxWidth / width;
+       width = maxWidth;
+       height = height * ratio;
+     }
+     
+     if (height > maxHeight) {
+       const ratio = maxHeight / height;
+       height = maxHeight;
+       width = width * ratio;
+     }
+     
+     // Si la imagen es muy pequeña, la aumentamos
+     if (width < 300 || height < 300) {
+       const scaleFactor = Math.max(300/width, 300/height);
+       width = width * scaleFactor;
+       height = height * scaleFactor;
+     }
+     
+     // Asegurar dimensiones mínimas
+     width = Math.max(width, 300);
+     height = Math.max(height, 300);
+     
+     // Redondear a números enteros
+     width = Math.round(width);
+     height = Math.round(height);
+     
+     // Aplicar el redimensionamiento
+     canvas.width = width;
+     canvas.height = height;
+     
+     // Mejorar la calidad del redimensionamiento
+     ctx.imageSmoothingQuality = 'high';
+     ctx.drawImage(img, 0, 0, width, height);
+     
+     // Crear nueva imagen con las dimensiones ajustadas
+     const resizedImage = new Image();
+     resizedImage.src = canvas.toDataURL('image/jpeg', 0.9);
+     
+     return resizedImage;
+   }
+
    // Función para mostrar carga con barra de progreso
    function showLoader(message = "Analizando imagen...") {
      resultDiv.innerHTML = `
@@ -1953,7 +2004,7 @@
            <div class="info-card">
              <div class="info-title">Otras coincidencias:</div>
              ${matches.slice(1, 4).map(match => `
-               <div class="search-item" onclick="displayAnimalInfo(${JSON.stringify(match.data).replace(/"/g, '&quot;')}">
+               <div class="search-item" onclick="displayAnimalInfo(${JSON.stringify(match.data).replace(/"/g, '&quot;')})">
                  ${match.name} (${(match.score * 100).toFixed(0)}% coincidencia)
                </div>
              `).join('')}
@@ -1989,12 +2040,17 @@
      
      img.onload = async () => {
        try {
-         canvas.width = img.width;
-         canvas.height = img.height;
-         ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+         // Redimensionar la imagen antes de procesarla
+         const resizedImg = resizeImage(img);
          
-         const result = await classifyImage(img);
-         displayResults(result, img.src);
+         resizedImg.onload = async () => {
+           canvas.width = resizedImg.width;
+           canvas.height = resizedImg.height;
+           ctx.drawImage(resizedImg, 0, 0, canvas.width, canvas.height);
+           
+           const result = await classifyImage(resizedImg);
+           displayResults(result, resizedImg.src);
+         };
        } catch (error) {
          showError(`Error al procesar la imagen: ${error.message}`);
        }
@@ -2048,8 +2104,13 @@
        img.src = canvas.toDataURL('image/jpeg');
        
        img.onload = async () => {
-         const result = await classifyImage(img);
-         displayResults(result, img.src);
+         // Redimensionar la imagen capturada
+         const resizedImg = resizeImage(img);
+         
+         resizedImg.onload = async () => {
+           const result = await classifyImage(resizedImg);
+           displayResults(result, resizedImg.src);
+         };
        };
      } catch (error) {
        showError(`Error al capturar la imagen: ${error.message}`);
